@@ -1,33 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Scenario01
 {
-    class Countdown
-    {
-        private int _value = 0;
-
-        public Countdown(int value)
-        {
-            _value = value;
-        }
-
-        public int Decrement()
-        {
-            if (_value > 0)
-            {
-                return --_value;
-            }
-            else
-            {
-                return _value;
-            }
-        }
-    }
-
     class Program
     {
         static void Main(string[] args)
