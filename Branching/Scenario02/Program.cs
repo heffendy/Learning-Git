@@ -8,21 +8,6 @@ namespace Scenario02
 {
     class Program
     {
-        class Countdown
-        {
-            private int _value = 0;
-
-            public Countdown(int value)
-            {
-                _value = value;
-            }
-
-            public int Decrement()
-            {
-                return --_value;
-            }
-        }
-
         static void Main(string[] args)
         {
             Countdown countdown = new Countdown(5);
