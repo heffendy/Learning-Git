@@ -19,7 +19,14 @@ namespace Scenario02
 
             public int Decrement()
             {
-                return --_value;
+                if (_value > 0)
+                {
+                    return --_value;
+                }
+                else
+                {
+                    return _value;
+                }
             }
         }
 
