@@ -17,7 +17,7 @@ namespace Scenario03
 
         public int Decrement()
         {
-            return _value = _value.Decrement();
+            return _value = _value.Decrement_NoNegative();
         }
     }
 }
