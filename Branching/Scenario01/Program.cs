@@ -6,11 +6,33 @@ using System.Threading.Tasks;
 
 namespace Scenario01
 {
+    class Countdown
+    {
+        private int _value = 0;
+
+        public Countdown(int value)
+        {
+            _value = value;
+        }
+
+        public int Decrement()
+        {
+            return --_value;
+        }
+    }
+
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World");
+            Countdown countdown = new Countdown(5);
+
+            Console.WriteLine(countdown.Decrement()); // 4
+            Console.WriteLine(countdown.Decrement()); // 3
+            Console.WriteLine(countdown.Decrement()); // 2
+            Console.WriteLine(countdown.Decrement()); // 1
+            Console.WriteLine(countdown.Decrement()); // 0
+
             Console.ReadLine();
         }
     }
