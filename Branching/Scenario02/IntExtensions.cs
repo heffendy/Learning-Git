@@ -12,5 +12,17 @@ namespace Scenario02
         {
             return --value;
         }
+
+        public static int Decrement_NoNegative(this int value)
+        {
+            if (value > 0)
+            {
+                return --value;
+            }
+            else
+            {
+                return value;
+            }
+        }
     }
 }
