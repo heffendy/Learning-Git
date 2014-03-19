@@ -18,6 +18,10 @@ namespace Scenario04
             Console.WriteLine(countdown.Decrement()); // 1
             Console.WriteLine(countdown.Decrement()); // 0
 
+            // Negative tests
+            Console.WriteLine(countdown.Decrement()); // 0
+            Console.WriteLine(countdown.Decrement()); // 0
+
             Console.ReadLine();
         }
     }
